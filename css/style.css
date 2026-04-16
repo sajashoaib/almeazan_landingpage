@@ -54,12 +54,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom,
-      rgba(10, 30, 30, 0.85) 0%,
-      rgba(15, 47, 48, 0.85) 25%,
-      rgba(24, 87, 87, 0.8) 50%,
-      rgba(29, 64, 66, 0.9) 70%,
-      rgba(0, 0, 0, 0.98) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 30, 30, 0.85) 0%,
+    rgba(15, 47, 48, 0.85) 25%,
+    rgba(24, 87, 87, 0.8) 50%,
+    rgba(29, 64, 66, 0.9) 70%,
+    rgba(0, 0, 0, 0.98) 100%
+  );
   pointer-events: none;
   z-index: -1;
 }
@@ -139,7 +141,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  color: #2e2e2e;
+  color: #d4af37;
   font-size: 30px;
   padding: 10px;
 }
@@ -282,7 +284,6 @@ body {
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0);
@@ -403,9 +404,11 @@ body {
 .hero-form-wrapper {
   padding: 80px 0;
 
-  background: linear-gradient(135deg,
-      rgba(15, 47, 48, 0.85),
-      rgba(24, 87, 87, 0.75));
+  background: linear-gradient(
+    135deg,
+    rgba(15, 47, 48, 0.85),
+    rgba(24, 87, 87, 0.75)
+  );
 
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
@@ -768,9 +771,11 @@ body {
 /* ******************** start testimonials_section style *********************************** */
 .testimonials-section {
   padding: 50px 0;
-  background: linear-gradient(135deg,
-      rgba(15, 47, 48, 0.85),
-      rgba(24, 87, 87, 0.75));
+  background: linear-gradient(
+    135deg,
+    rgba(15, 47, 48, 0.85),
+    rgba(24, 87, 87, 0.75)
+  );
 
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
@@ -909,9 +914,11 @@ body {
 /* ******************** start video-cta_section style *********************************** */
 .video-cta-section {
   padding: 100px 0;
-  background: linear-gradient(135deg,
-      rgba(15, 47, 48, 0.85),
-      rgba(24, 87, 87, 0.75));
+  background: linear-gradient(
+    135deg,
+    rgba(15, 47, 48, 0.85),
+    rgba(24, 87, 87, 0.75)
+  );
   position: relative;
   overflow: hidden;
 }
@@ -1140,7 +1147,7 @@ body {
 /* ******************** start mediaQuery for responsive style *********************************** */
 
 @media (max-width: 767px) {
-  .navbar>.container-fluid {
+  .navbar > .container-fluid {
     padding: 10px 10px;
   }
 
@@ -1148,9 +1155,59 @@ body {
     width: 100px;
     height: auto;
   }
+  .navbar {
+    background: rgba(15, 47, 48, 0.95);
+  }
+  .hero-content {
+    margin-top: 200px;
+  }
+  .hero-content h1 {
+    font-size: 21px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+  .hero-btn {
+    margin-bottom: 25px;
+  }
+  .about-section {
+    padding: 30px 0;
+  }
+  .about-box h2 {
+    font-size: 25px;
+  }
+  .services-title {
+    font-size: 25px;
+
+    margin-bottom: 20px;
+  }
+  .faq-title,
+  .cta-content h2 {
+    font-size: 25px;
+  }
+  .video-cta-section {
+    padding: 50px 0;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .iti__country-list {
+    position: fixed !important;
+    top: auto !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    width: 100% !important;
+    max-height: 50vh;
+
+    border-radius: 20px 20px 0 0;
+    z-index: 999999;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+}
 
 html,
 body {
