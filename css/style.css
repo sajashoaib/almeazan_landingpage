@@ -524,6 +524,9 @@ body {
 .iti__dial-code {
   color: #666;
 }
+.iti__selected-dial-code {
+  color: #000 !important; /* لون المقدمة نفسها */
+}
 
 .popup-overlay {
   position: fixed;
@@ -1142,6 +1145,59 @@ body {
   .footer-links {
     justify-content: center;
   }
+}
+/* ******************** start whatsapp_section style *********************************** */
+
+.whatsapp-wrapper {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+  direction: rtl;
+}
+
+.whatsapp-wrapper-en {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  direction: ltr;
+}
+
+.whatsapp-icon {
+  background-color: #25d366;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  background-color: #1da851;
+  color: white;
+}
+
+.whatsapp-text-box {
+  background-color: #1da851;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.whatsapp-text-box:hover {
+  background-color: #058c37;
+  color: white;
 }
 
 /* ******************** start mediaQuery for responsive style *********************************** */
